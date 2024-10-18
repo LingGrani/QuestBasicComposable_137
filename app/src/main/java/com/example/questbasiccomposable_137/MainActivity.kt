@@ -68,7 +68,11 @@ fun BasicLayout(modifier: Modifier = Modifier) {
             modifier = Modifier.size(200.dp)
         )
         Text(
-            text = "Nama"
+            text = "Nama",
+            style = TextStyle(
+                fontSize = 20.sp,
+                fontWeight = FontWeight.SemiBold,
+            )
         )
         Text(
             text = "Luthfi Angger Ramdhani",
