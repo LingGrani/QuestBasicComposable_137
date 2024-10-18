@@ -37,36 +37,29 @@ class MainActivity : ComponentActivity() {
 fun BasicLayout(modifier: Modifier = Modifier) {
     Column (
         horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center,
+        verticalArrangement = Arrangement.Top,
         modifier = modifier.fillMaxSize()
     ){
         Text(
             text = "Login",
-            modifier = modifier
         )
         Text(
             text = "Ini adalah Halaman login",
-            modifier = modifier
         )
         Text(
             text = "I'm fine, thank you!",
-            modifier = modifier
         )
         Text(
             text = "Nama",
-            modifier = modifier
         )
         Text(
             text = "Luthfi Angger Ramdhani",
-            modifier = modifier
         )
         Text(
             text = "20220140137",
-            modifier = modifier
         )
         Text(
             text = "Bye!",
-            modifier = modifier
         )
     }
 }
