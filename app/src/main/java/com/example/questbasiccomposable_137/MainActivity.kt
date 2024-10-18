@@ -41,11 +41,11 @@ fun BasicLayout(modifier: Modifier = Modifier) {
         modifier = modifier.fillMaxSize()
     ){
         Text(
-            text = "Hello $name!",
+            text = "Login",
             modifier = modifier
         )
         Text(
-            text = "How are you?",
+            text = "Ini adalah Halaman login",
             modifier = modifier
         )
         Text(
@@ -53,15 +53,15 @@ fun BasicLayout(modifier: Modifier = Modifier) {
             modifier = modifier
         )
         Text(
-            text = "What's your name?",
+            text = "Nama",
             modifier = modifier
         )
         Text(
-            text = "My name is ...",
+            text = "Luthfi Angger Ramdhani",
             modifier = modifier
         )
         Text(
-            text = "Nice to meet you!",
+            text = "20220140137",
             modifier = modifier
         )
         Text(
