@@ -13,9 +13,12 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.questbasiccomposable_137.ui.theme.QuestBasicComposable_137Theme
-
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,32 +38,23 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun BasicLayout(modifier: Modifier = Modifier) {
-    Column (
+    Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Top,
         modifier = modifier.fillMaxSize()
-    ){
+    ) {
         Text(
             text = "Login",
+            style = TextStyle(
+                fontWeight = FontWeight.Bold,
+                fontSize = 40.sp
+            )
         )
-        Text(
-            text = "Ini adalah Halaman login",
-        )
-        Text(
-            text = "I'm fine, thank you!",
-        )
-        Text(
-            text = "Nama",
-        )
-        Text(
-            text = "Luthfi Angger Ramdhani",
-        )
-        Text(
-            text = "20220140137",
-        )
-        Text(
-            text = "Bye!",
-        )
+        Text(text = "Ini adalah Halaman login")
+        Text(text = "I'm fine, thank you!")
+        Text(text = "Nama")
+        Text(text = "Luthfi Angger Ramdhani")
+        Text(text = "20220140137")
+        Text(text = "Bye!")
     }
 }
-
