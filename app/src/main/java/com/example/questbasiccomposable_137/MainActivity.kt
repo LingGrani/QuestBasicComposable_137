@@ -60,14 +60,17 @@ fun BasicLayout(modifier: Modifier = Modifier) {
         Image(
             painter = painterResource(id = R.drawable.umy),
             contentDescription = "umylogo",
-            modifier = Modifier.size(300.dp)
+            modifier = Modifier.size(200.dp)
         )
         Text(
             text = "Nama"
         )
         Text(
             text = "Luthfi Angger Ramdhani",
-            style = TextStyle(color = Color(255,0,0))
+            style = TextStyle(
+                fontSize = 20.sp,
+                color = Color(255,0,0)
+            )
         )
         Text(text = "20220140137")
         Image(
