@@ -68,6 +68,9 @@ fun BasicLayout(modifier: Modifier = Modifier) {
             style = TextStyle(color = Color(255,0,0))
         )
         Text(text = "20220140137")
-        Text(text = "Bye!")
+        Image(
+            painter = painterResource(id = R.drawable.foto),
+            contentDescription = "foto",
+        )
     }
 }
