@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
@@ -20,7 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             QuestBasicComposable_137Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
+                    BasicLayout(
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
                     )
@@ -31,17 +32,36 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    QuestBasicComposable_137Theme {
-        Greeting("Android")
+fun BasicLayout(name: String, modifier: Modifier = Modifier) {
+    Column {
+        Text(
+            text = "Hello $name!",
+            modifier = modifier
+        )
+        Text(
+            text = "How are you?",
+            modifier = modifier
+        )
+        Text(
+            text = "I'm fine, thank you!",
+            modifier = modifier
+        )
+        Text(
+            text = "What's your name?",
+            modifier = modifier
+        )
+        Text(
+            text = "My name is ...",
+            modifier = modifier
+        )
+        Text(
+            text = "Nice to meet you!",
+            modifier = modifier
+        )
+        Text(
+            text = "Bye!",
+            modifier = modifier
+        )
     }
 }
+
